@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <script>
+        document.querySelector('.button').addEventListener('click', () => {
+            const button = document.querySelector('.button');
+            button.classList.add('loading');
+
+            // Simulación de proceso
+            setTimeout(() => {
+                button.classList.remove('loading');
+                button.classList.add('success');
+            }, 2000); // Simula el tiempo de carga
+        });
+    </script>
+
